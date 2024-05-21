@@ -1,3 +1,8 @@
 <h1>Where is the ISS? 🛰️</h1>
 <!-- TODO add in actual position here -->
-<p>This observation was made at <%= Time.at(data['timestamp']) %>.</p>
+<div class="info-card">
+  <h3>Current ISS Position</h3>
+  <p>Latitude: <%= data["iss_position"]["latitude"] %></p>
+  <p>Longitude: <%= data["iss_position"]["longitude"] %></p>
+  <p>This observation was made at <%= Time.at(data['timestamp']) %>.</p>
+</div>

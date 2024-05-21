@@ -1,0 +1,29 @@
+.main-container {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 3rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.info-card {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+  }
+  
+  .info-card p {
+    margin: 5px 0; 
+  }
+  
