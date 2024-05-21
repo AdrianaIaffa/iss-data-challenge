@@ -24,4 +24,19 @@ get '/astros' do
 
   content_type :json
   astros.to_json
+
+end
+
+get '/astronauts' do 
+  # Get the astronaut data 
+  astronaut_data = OpenNotify.astros
+  # extract the astronaut information,access json file and from people 
+  # get all the info for each "people lol"
+  # this is an array of astronauts, they are called hashes[{craft},{name},{craft},{name}]
+  astronauts = astronaut_data["people"]
+  #console.log using puts
+  puts astronauts
+
+  erb :astronauts
+
 end
