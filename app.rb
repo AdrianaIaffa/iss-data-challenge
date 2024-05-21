@@ -35,8 +35,9 @@ get '/astronauts' do
   # this is an array of astronauts, they are called hashes[{craft},{name},{craft},{name}]
   astronauts = astronaut_data["people"]
   #console.log using puts
-  puts astronauts
-
-  erb :astronauts
+  # puts astronauts
+  #locals, add the variale name astronauts and assign it the value of astronauts so i can
+  #access my data on my front end like astronauts.name but in ruby astronauts['name']
+  erb :astronauts, locals: {astronauts: astronauts}
 
 end

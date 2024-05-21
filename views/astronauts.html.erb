@@ -1,0 +1,9 @@
+<h2>Who is in Space right now?</h2>
+<ul>
+  <% astronauts.each do |astronaut| %>
+    <li>
+      <p>Name: <%= astronaut["name"] %></p>
+      <p>Craft: <%= astronaut["craft"] %></p>
+    </li>
+  <% end %>
+</ul>
